@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redes Sociais da Wahi</title>
+    <title>Wahi's Social Media</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* === ESTILO DA NAVEGAÇÃO === */
+        /* === NAVIGATION STYLE === */
         .navbar {
             position: fixed;
             top: 0;
@@ -49,7 +49,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Botão de idioma */
+        /* Language button */
         .language-switcher {
             display: flex;
             align-items: center;
@@ -191,7 +191,7 @@
             transform: rotate(-45deg) translate(7px, -6px);
         }
 
-        /* Responsividade da navegação */
+        /* Navigation responsiveness */
         @media (max-width: 768px) {
             .hamburger {
                 display: flex;
@@ -240,7 +240,7 @@
             }
         }
 
-        /* === ESTILO GERAL === */
+        /* === GENERAL STYLE === */
         * {
             margin: 0;
             padding: 0;
@@ -281,7 +281,7 @@
             padding: 30px 0 60px 0;
         }
 
-        /* === CABEÇALHO DA PÁGINA COM FOTO === */
+        /* === PAGE HEADER WITH PHOTO === */
         .header {
             text-align: center;
             margin-bottom: 50px;
@@ -375,7 +375,7 @@
             font-weight: 700;
         }
 
-        /* === CARDS DE REDES SOCIAIS === */
+        /* === SOCIAL MEDIA CARDS === */
         .sections-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
@@ -449,14 +449,14 @@
             display: inline-block;
         }
 
-        /* CORREÇÃO: Grid de 2 colunas fixas para melhor visualização */
+        /* FIX: 2 column grid for better visualization */
         .social-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
 
-        /* CORREÇÃO: Altura automática para mostrar todo o conteúdo */
+        /* FIX: Automatic height to show all content */
         .social-card {
             background: rgba(240, 27, 133, 0.15);
             color: #ffffff;
@@ -491,7 +491,7 @@
             flex-shrink: 0;
         }
 
-        /* CORREÇÃO: Conteúdo flexível que quebra linha */
+        /* FIX: Flexible content that wraps */
         .social-content {
             flex: 1;
             min-width: 0;
@@ -518,7 +518,7 @@
             line-height: 1.4;
         }
 
-        /* === SEÇÃO DE EMAIL === */
+        /* === EMAIL SECTION === */
         .email-section {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
@@ -596,7 +596,7 @@
             box-shadow: 0 5px 15px rgba(240, 27, 133, 0.4);
         }
 
-        /* === BOTÃO FLUTUANTE DE VOLTAR AO TOPO === */
+        /* === FLOATING BACK TO TOP BUTTON === */
         .floating-top-btn {
             position: fixed;
             bottom: 30px;
@@ -628,7 +628,7 @@
             box-shadow: 0 8px 25px rgba(240, 27, 133, 0.6);
         }
 
-        /* === RESPONSIVIDADE - CORREÇÕES === */
+        /* === RESPONSIVENESS - FIXES === */
         @media (max-width: 992px) {
             .section-card {
                 padding: 25px;
@@ -684,7 +684,7 @@
         }
 
         @media (max-width: 650px) {
-            /* CORREÇÃO: Em telas menores, 1 coluna para melhor leitura */
+            /* FIX: On smaller screens, 1 column for better reading */
             .social-grid {
                 grid-template-columns: 1fr;
             }
@@ -755,116 +755,66 @@
                 height: 130px;
             }
         }
-
-        /* === SISTEMA DE TRADUÇÃO === */
-        /* Elementos em português são visíveis por padrão */
-        .lang-pt {
-            display: block;
-        }
-        
-        .lang-en {
-            display: none;
-        }
-        
-        /* Quando o body tem a classe 'english', mostramos inglês e escondemos português */
-        body.english .lang-pt {
-            display: none;
-        }
-        
-        body.english .lang-en {
-            display: block;
-        }
-        
-        /* Para elementos que precisam de display flex */
-        .social-card.lang-pt {
-            display: flex !important;
-        }
-        
-        .social-card.lang-en {
-            display: none !important;
-        }
-        
-        body.english .social-card.lang-pt {
-            display: none !important;
-        }
-        
-        body.english .social-card.lang-en {
-            display: flex !important;
-        }
-        
-        /* Corrigir links duplicados da Wiki */
-        .wiki-link {
-            display: inline-block;
-        }
-        
-        body:not(.english) .wiki-link.lang-en {
-            display: none !important;
-        }
-        
-        body.english .wiki-link.lang-pt {
-            display: none !important;
-        }
     </style>
 </head>
 <body>
-    <!-- ===== NAVEGAÇÃO ===== -->
+    <!-- ===== NAVIGATION ===== -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-text lang-pt">Laços Profanos</span>
-                <span class="logo-text lang-en">Profane Bonds</span>
+                <span class="logo-text">Profane Bonds</span>
             </a>
             
-            <!-- Botão de seleção de idioma -->
+            <!-- Language selection button -->
             <div class="language-switcher">
                 <div class="language-dropdown" id="languageDropdown">
                     <button class="language-btn" id="languageBtn">
                         <i class="fas fa-globe"></i>
-                        <span id="current-language">Português</span>
+                        <span id="current-language">English</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-content" id="dropdownContent">
-                        <a href="#" class="language-option" data-lang="pt">Português</a>
-                        <a href="#" class="language-option" data-lang="en">English</a>
+                        <!-- "Portuguese" option leads to Portuguese version -->
+                        <a href="https://lacosprofanos.com.br/wahi" class="language-option" data-lang="pt">
+                            Português
+                        </a>
+                        <!-- "English" active option (not clickable) -->
+                        <a href="#" class="language-option" data-lang="en" style="background-color: rgba(240, 27, 133, 0.3); color: #ff4da6; pointer-events: none;">
+                            <i class="fas fa-check"></i> English
+                        </a>
                     </div>
                 </div>
             </div>
             
             <ul class="nav-menu" id="navMenu">
                 <li class="nav-item">
-                    <a href="https://lacosprofanos.com.br" target="_blank">
+                    <a href="https://lacosprofanos.com.br/en" target="_blank">
                         <i class="fas fa-home"></i> 
-                        <span class="lang-pt">Site Principal</span>
-                        <span class="lang-en">Main Site</span>
+                        <span>Main Site</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://lacosprofanos.com.br/wallpapers&icons" target="_blank">
+                    <a href="https://lacosprofanos.com.br/wallpapers&icons/en" target="_blank">
                         <i class="fas fa-image"></i> 
-                        <span class="lang-pt">Wallpapers & Icons</span>
-                        <span class="lang-en">Wallpapers & Icons</span>
+                        <span>Wallpapers & Icons</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <!-- Blog é o mesmo em ambos os idiomas -->
+                    <!-- Blog remains the same -->
                     <a href="https://lacosprofanos.blogspot.com/" target="_blank">
                         <i class="fas fa-blog"></i> Blog
                     </a>
                 </li>
                 <li class="nav-item">
-                    <!-- ÚNICO link da Wiki que alterna entre idiomas -->
-                    <a href="https://lacosprofanos.fandom.com/pt-br/" target="_blank" class="wiki-link lang-pt">
-                        <i class="fas fa-book"></i> Wiki
-                    </a>
-                    <a href="https://profanebonds.fandom.com/wiki/" target="_blank" class="wiki-link lang-en">
+                    <!-- English Wiki link -->
+                    <a href="https://profanebonds.fandom.com/wiki/" target="_blank" class="wiki-link">
                         <i class="fas fa-book"></i> Wiki
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="https://lacosprofanos.com.br/tos" target="_blank">
                         <i class="fas fa-file-contract"></i> 
-                        <span class="lang-pt">Termos de Serviço</span>
-                        <span class="lang-en">Terms of Service</span>
+                        <span>Terms of Service</span>
                     </a>
                 </li>
             </ul>
@@ -877,28 +827,23 @@
         </div>
     </nav>
 
-    <!-- Botão flutuante para voltar ao topo -->
+    <!-- Floating back to top button -->
     <a href="#top" class="floating-top-btn" id="floatingTopBtn">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <main class="container">
-        <!-- Cabeçalho da página com foto -->
+        <!-- Page header with photo -->
         <header class="header" id="top">
             <div class="profile-section">
                 <div class="profile-image">
-                    <img src="https://i.imgur.com/LOXjaKn.jpeg" alt="Wahi - Criadora de Laços Profanos">
+                    <img src="https://i.imgur.com/LOXjaKn.jpeg" alt="Wahi - Creator of Profane Bonds">
                 </div>
                 
                 <div class="profile-info">
-                    <h1 class="page-title lang-pt">Redes Sociais da Wahi</h1>
-                    <h1 class="page-title lang-en">Wahi's Social Media</h1>
+                    <h1 class="page-title">Wahi's Social Media</h1>
                     
-                    <p class="subtitle lang-pt">
-                        Conecte-se com a criadora do universo <span class="highlight">Laços Profanos</span> através de suas redes sociais, 
-                        plataformas de desenvolvimento e canais de conteúdo.
-                    </p>
-                    <p class="subtitle lang-en">
+                    <p class="subtitle">
                         Connect with the creator of the <span class="highlight">Profane Bonds</span> universe through her social media, 
                         development platforms, and content channels.
                     </p>
@@ -906,74 +851,18 @@
             </div>
         </header>
 
-        <!-- Grid de seções -->
+        <!-- Grid of sections -->
         <div class="sections-grid">
-            <!-- Wahipogo (Redes Sociais) -->
+            <!-- Wahipogo (Social Media) -->
             <div class="section-card">
-                <h2 class="section-title lang-pt">Wahipogo</h2>
-                <h2 class="section-title lang-en">Wahipogo</h2>
+                <h2 class="section-title">Wahipogo</h2>
                 
-                <p class="subtitle lang-pt" style="text-align: left; margin-bottom: 25px;">
-                    Redes sociais pessoais e canais de conteúdo criativo
-                </p>
-                <p class="subtitle lang-en" style="text-align: left; margin-bottom: 25px;">
+                <p class="subtitle" style="text-align: left; margin-bottom: 25px;">
                     Personal social media and creative content channels
                 </p>
                 
                 <div class="social-grid">
-                    <!-- Português -->
-                    <a href="https://youtube.com/@wahipogo" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #FF0000;">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>YouTube</h3>
-                            <p>Canal focado em animações</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://www.instagram.com/wahipogo" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #E4405F;">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>Instagram</h3>
-                            <p>Perfil pessoal com fotos e atualizações</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://www.tiktok.com/@wahipogo" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #000000;">
-                            <i class="fab fa-tiktok"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>TikTok</h3>
-                            <p>Vídeos curtos e conteúdo divertido</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://x.com/wahipoga" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #1DA1F2;">
-                            <i class="fab fa-twitter"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>X (Twitter)</h3>
-                            <p>Atualizações e pensamentos</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://discord.gg/u4sD2JyTuT" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #5865F2;">
-                            <i class="fab fa-discord"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>Discord</h3>
-                            <p>Servidor oficial de Laços Profanos</p>
-                        </div>
-                    </a>
-                    
-                    <!-- Inglês -->
-                    <a href="https://youtube.com/@wahipogo" target="_blank" class="social-card lang-en">
+                    <a href="https://youtube.com/@wahipogo" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #FF0000;">
                             <i class="fab fa-youtube"></i>
                         </div>
@@ -983,7 +872,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://www.instagram.com/wahipogo" target="_blank" class="social-card lang-en">
+                    <a href="https://www.instagram.com/wahipogo" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #E4405F;">
                             <i class="fab fa-instagram"></i>
                         </div>
@@ -993,7 +882,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://www.tiktok.com/@wahipogo" target="_blank" class="social-card lang-en">
+                    <a href="https://www.tiktok.com/@wahipogo" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #000000;">
                             <i class="fab fa-tiktok"></i>
                         </div>
@@ -1003,7 +892,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://x.com/wahipoga" target="_blank" class="social-card lang-en">
+                    <a href="https://x.com/wahipoga" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #1DA1F2;">
                             <i class="fab fa-twitter"></i>
                         </div>
@@ -1013,7 +902,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://discord.gg/u4sD2JyTuT" target="_blank" class="social-card lang-en">
+                    <a href="https://discord.gg/u4sD2JyTuT" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #5865F2;">
                             <i class="fab fa-discord"></i>
                         </div>
@@ -1025,72 +914,16 @@
                 </div>
             </div>
 
-            <!-- Redes de Desenvolvedor -->
+            <!-- Developer Networks -->
             <div class="section-card">
-                <h2 class="section-title lang-pt">Redes de Desenvolvedor</h2>
-                <h2 class="section-title lang-en">Developer Networks</h2>
+                <h2 class="section-title">Developer Networks</h2>
                 
-                <p class="subtitle lang-pt" style="text-align: left; margin-bottom: 25px;">
-                    Plataformas de desenvolvimento, portfólio e projetos técnicos
-                </p>
-                <p class="subtitle lang-en" style="text-align: left; margin-bottom: 25px;">
+                <p class="subtitle" style="text-align: left; margin-bottom: 25px;">
                     Development platforms, portfolio, and technical projects
                 </p>
                 
                 <div class="social-grid">
-                    <!-- Português -->
-                    <a href="https://github.com/wahipoga" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #ffffff;">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>GitHub</h3>
-                            <p>Conta pessoal com projetos de código</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://github.com/wahipoga/portfolio" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #4078c0;">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>GitHub Portfolio</h3>
-                            <p>Repositório do portfólio de projetos</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://lacosprofanos.com.br/wahi/portfolio" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #f01b85;">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>Portfólio Online</h3>
-                            <p>Portfólio completo com todos os projetos</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://www.youtube.com/@wahipogo2en" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #FF0000;">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>YouTube Dev</h3>
-                            <p>Canal de desenvolvimento</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://itch.io/profile/wahipogo" target="_blank" class="social-card lang-pt">
-                        <div class="social-icon" style="color: #FA5C5C;">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <div class="social-content">
-                            <h3>itch.io</h3>
-                            <p>Perfil com jogos indie e projetos de game dev</p>
-                        </div>
-                    </a>
-                    
-                    <!-- Inglês -->
-                    <a href="https://github.com/wahipoga" target="_blank" class="social-card lang-en">
+                    <a href="https://github.com/wahipoga" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #ffffff;">
                             <i class="fab fa-github"></i>
                         </div>
@@ -1100,7 +933,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://github.com/wahipoga/portfolio" target="_blank" class="social-card lang-en">
+                    <a href="https://github.com/wahipoga/portfolio" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #4078c0;">
                             <i class="fas fa-code-branch"></i>
                         </div>
@@ -1110,7 +943,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://lacosprofanos.com.br/wahi/portfolio" target="_blank" class="social-card lang-en">
+                    <a href="https://lacosprofanos.com.br/wahi/portfolio" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #f01b85;">
                             <i class="fas fa-briefcase"></i>
                         </div>
@@ -1120,7 +953,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://www.youtube.com/@wahipogo2en" target="_blank" class="social-card lang-en">
+                    <a href="https://www.youtube.com/@wahipogo2en" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #FF0000;">
                             <i class="fab fa-youtube"></i>
                         </div>
@@ -1130,7 +963,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://itch.io/profile/wahipogo" target="_blank" class="social-card lang-en">
+                    <a href="https://itch.io/profile/wahipogo" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #FA5C5C;">
                             <i class="fas fa-gamepad"></i>
                         </div>
@@ -1143,20 +976,14 @@
             </div>
         </div>
 
-        <!-- Seção de Email -->
+        <!-- Email Section -->
         <div class="email-section">
-            <h2 class="email-title lang-pt">
-                <i class="fas fa-envelope"></i> Contato Comercial
-            </h2>
-            <h2 class="email-title lang-en">
+            <h2 class="email-title">
                 <i class="fas fa-envelope"></i> Commercial Contact
             </h2>
             
             <div class="email-box">
-                <p class="lang-pt" style="color: #cccccc; margin-bottom: 10px;">
-                    Para propostas comerciais, parcerias ou questões profissionais:
-                </p>
-                <p class="lang-en" style="color: #cccccc; margin-bottom: 10px;">
+                <p style="color: #cccccc; margin-bottom: 10px;">
                     For commercial proposals, partnerships, or professional inquiries:
                 </p>
                 
@@ -1166,15 +993,10 @@
                 
                 <button class="copy-btn" id="copyEmailBtn">
                     <i class="far fa-copy"></i> 
-                    <span class="lang-pt">Copiar Email</span>
-                    <span class="lang-en">Copy Email</span>
+                    <span>Copy Email</span>
                 </button>
                 
-                <p class="email-note lang-pt">
-                    <i class="fas fa-info-circle"></i> Este email é destinado apenas para contato comercial e profissional. 
-                    Para outras questões, utilize as redes sociais acima.
-                </p>
-                <p class="email-note lang-en">
+                <p class="email-note">
                     <i class="fas fa-info-circle"></i> This email is intended only for commercial and professional contact. 
                     For other matters, use the social media above.
                 </p>
@@ -1182,17 +1004,17 @@
         </div>
     </main>
 
-    <!-- Sistema de Tradução e Navegação -->
+    <!-- Navigation and Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('Página da Wahi carregada - sistema pronto');
+            console.log("Wahi's page loaded - system ready");
             
-            // ===== 1. CONTROLE DO DROPDOWN DE IDIOMA =====
+            // ===== 1. LANGUAGE DROPDOWN CONTROL =====
             const languageBtn = document.getElementById('languageBtn');
             const dropdownContent = document.getElementById('dropdownContent');
             
             if (languageBtn && dropdownContent) {
-                // Abrir/fechar dropdown ao clicar no botão
+                // Open/close dropdown when clicking the button
                 languageBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
                     if (dropdownContent.style.display === 'block') {
@@ -1202,64 +1024,29 @@
                     }
                 });
                 
-                // Fechar dropdown ao clicar fora
+                // Close dropdown when clicking outside
                 document.addEventListener('click', function(e) {
                     if (!e.target.closest('.language-dropdown')) {
                         dropdownContent.style.display = 'none';
                     }
                 });
                 
-                // Prevenir que o dropdown feche ao clicar dentro dele
+                // Prevent dropdown from closing when clicking inside it
                 dropdownContent.addEventListener('click', function(e) {
                     e.stopPropagation();
                 });
             }
             
-            // ===== 2. SISTEMA DE TRADUÇÃO =====
-            document.querySelectorAll('.language-option').forEach(option => {
-                option.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const lang = this.getAttribute('data-lang');
-                    console.log('Mudando idioma para:', lang);
-                    
-                    // Mudar a classe do body
-                    if (lang === 'en') {
-                        document.body.classList.add('english');
-                    } else {
-                        document.body.classList.remove('english');
-                    }
-                    
-                    // Atualizar texto do botão
-                    const currentLangElement = document.getElementById('current-language');
-                    if (currentLangElement) {
-                        currentLangElement.textContent = lang === 'en' ? 'English' : 'Português';
-                    }
-                    
-                    // Atualizar título da página
-                    document.title = lang === 'en' ? "Wahi's Social Media" : 'Redes Sociais da Wahi';
-                    
-                    // Salvar preferência
-                    localStorage.setItem('preferred-language', lang);
-                    
-                    // Fechar dropdown
-                    if (dropdownContent) {
-                        dropdownContent.style.display = 'none';
-                    }
-                    
-                    console.log('Idioma alterado. Body tem classe english?', document.body.classList.contains('english'));
-                });
-            });
-            
-            // ===== 3. MENU HAMBÚRGUER =====
+            // ===== 2. HAMBURGER MENU =====
             const hamburger = document.getElementById('hamburger');
             const navMenu = document.getElementById('navMenu');
             
             if (hamburger && navMenu) {
-                console.log('Menu hambúrguer encontrado');
+                console.log('Hamburger menu found');
                 
                 hamburger.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    console.log('Hambúrguer clicado');
+                    console.log('Hamburger clicked');
                     
                     hamburger.classList.toggle('active');
                     navMenu.classList.toggle('active');
@@ -1267,7 +1054,7 @@
                     console.log('Menu active?', navMenu.classList.contains('active'));
                 });
                 
-                // Fechar menu ao clicar em links (mobile)
+                // Close menu when clicking links (mobile)
                 document.querySelectorAll('.nav-item a').forEach(link => {
                     link.addEventListener('click', function(e) {
                         if (window.innerWidth <= 768) {
@@ -1277,7 +1064,7 @@
                     });
                 });
                 
-                // Fechar menu ao clicar fora (mobile)
+                // Close menu when clicking outside (mobile)
                 document.addEventListener('click', function(event) {
                     if (window.innerWidth <= 768 && 
                         navMenu.classList.contains('active') && 
@@ -1289,7 +1076,7 @@
                 });
             }
             
-            // Fechar menu ao redimensionar a tela
+            // Close menu when resizing screen
             window.addEventListener('resize', function() {
                 if (window.innerWidth > 768 && navMenu) {
                     hamburger.classList.remove('active');
@@ -1297,45 +1084,17 @@
                 }
             });
             
-            // ===== 4. INICIALIZAR IDIOMA SALVO =====
-            function initializeLanguage() {
-                const savedLang = localStorage.getItem('preferred-language');
-                const browserLang = navigator.language.startsWith('en') ? 'en' : 'pt';
-                const lang = savedLang || browserLang || 'pt';
-                
-                console.log('Inicializando com idioma:', lang);
-                
-                // Aplicar idioma
-                if (lang === 'en') {
-                    document.body.classList.add('english');
-                } else {
-                    document.body.classList.remove('english');
-                }
-                
-                // Atualizar texto do botão
-                const currentLangElement = document.getElementById('current-language');
-                if (currentLangElement) {
-                    currentLangElement.textContent = lang === 'en' ? 'English' : 'Português';
-                }
-                
-                // Atualizar título
-                document.title = lang === 'en' ? "Wahi's Social Media" : 'Redes Sociais da Wahi';
-            }
-            
-            // Inicializar idioma
-            initializeLanguage();
-            
-            // ===== 5. BOTÃO COPIAR EMAIL =====
+            // ===== 3. COPY EMAIL BUTTON =====
             const copyEmailBtn = document.getElementById('copyEmailBtn');
             if (copyEmailBtn) {
                 copyEmailBtn.addEventListener('click', function() {
                     const email = 'wahipoga@gmail.com';
                     
-                    // Usar a API Clipboard
+                    // Use Clipboard API
                     navigator.clipboard.writeText(email).then(function() {
-                        // Feedback visual
+                        // Visual feedback
                         const originalText = copyEmailBtn.innerHTML;
-                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span class="lang-pt">Copiado!</span><span class="lang-en">Copied!</span>';
+                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span>Copied!</span>';
                         copyEmailBtn.style.background = '#4CAF50';
                         
                         setTimeout(function() {
@@ -1343,8 +1102,8 @@
                             copyEmailBtn.style.background = '#f01b85';
                         }, 2000);
                     }).catch(function(err) {
-                        console.error('Erro ao copiar: ', err);
-                        // Fallback para método antigo
+                        console.error('Error copying: ', err);
+                        // Fallback to old method
                         const textArea = document.createElement('textarea');
                         textArea.value = email;
                         document.body.appendChild(textArea);
@@ -1352,9 +1111,9 @@
                         document.execCommand('copy');
                         document.body.removeChild(textArea);
                         
-                        // Feedback visual mesmo com fallback
+                        // Visual feedback even with fallback
                         const originalText = copyEmailBtn.innerHTML;
-                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span class="lang-pt">Copiado!</span><span class="lang-en">Copied!</span>';
+                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span>Copied!</span>';
                         copyEmailBtn.style.background = '#4CAF50';
                         
                         setTimeout(function() {
@@ -1365,7 +1124,7 @@
                 });
             }
             
-            // ===== 6. BOTÃO FLUTUANTE DE VOLTAR AO TOPO =====
+            // ===== 4. FLOATING BACK TO TOP BUTTON =====
             const floatingTopBtn = document.getElementById('floatingTopBtn');
             if (floatingTopBtn) {
                 window.addEventListener('scroll', function() {
@@ -1377,7 +1136,7 @@
                 });
             }
             
-            // ===== 7. SCROLL SUAVE PARA ÂNCORAS =====
+            // ===== 5. SMOOTH SCROLL TO ANCHORS =====
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -1395,14 +1154,14 @@
                 });
             });
             
-            // ===== 8. PREVENIR LINKS COM # =====
+            // ===== 6. PREVENT LINKS WITH # =====
             document.querySelectorAll('a[href="#"]').forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                 });
             });
             
-            console.log('Sistema inicializado completamente');
+            console.log('System fully initialized');
         });
     </script>
 </body>
