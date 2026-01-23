@@ -15,7 +15,7 @@ O código aqui é **open source** sob a licença **Apache 2.0**, ou seja, você 
 
 ## Atenção
 
-Alguns elementos **não estão incluídos** neste repositório e **não podem ser utilizados** sem autorização:
+Alguns elementos **que estão incluídos** neste repositório e **não podem ser utilizados** sem autorização:
 
 * Ícones
 * Favicons
