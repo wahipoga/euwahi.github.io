@@ -37,7 +37,7 @@
   - [6.1 Remoção Imediata](https://github.com/wahipoga/site/blob/main/tos/pt.md#61-remo%C3%A7%C3%A3o-imediata)
   - [6.2 Ações Legais](https://github.com/wahipoga/site/blob/main/tos/pt.md#62-a%C3%A7%C3%B5es-legais)
   - [6.3 Isenção de Responsabilidade](https://github.com/wahipoga/site/blob/main/tos/pt.md#63-isen%C3%A7%C3%A3o-de-responsabilidade)
-  - [6.4 Denúncia de Uso de IA:](
+  - [6.4 Denúncia de Uso de IA:](https://github.com/wahipoga/site/blob/main/tos/pt.md#64-den%C3%BAncia-de-uso-de-ia)
 - [7. Disposições Finais](https://github.com/wahipoga/site/blob/main/tos/pt.md#7-disposi%C3%A7%C3%B5es-finais)
 ---
 ## 1. Uso de Conteúdos
