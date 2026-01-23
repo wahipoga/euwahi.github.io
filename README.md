@@ -25,7 +25,3 @@ Alguns elementos **que estão incluídos** neste repositório e **não podem ser
 Além disso, o código **pode não estar perfeito** — às vezes ele pode estar programado de forma estranha ou imperfeita. **Não garantimos que tudo funcionará 100% para outros projetos**, pois o foco principal é o site oficial da marca.
 
 Por favor, siga os **termos de serviço** e os **termos da licença Apache 2.0** ao utilizar este código.
-
----
-
-Se você quiser, posso **escrever uma versão final pronta para colar direto no GitHub**, já formatada de maneira profissional, mas ainda mantendo seu estilo descontraído e o “tom da marca”. Quer que eu faça isso?
