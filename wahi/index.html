@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wahi's Social Media</title>
+    <title>Redes Sociais da Wahi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* === NAVIGATION STYLE === */
+        /* === ESTILO DA NAVEGAÇÃO === */
         .navbar {
             position: fixed;
             top: 0;
@@ -49,7 +49,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* Language button */
+        /* Botão de idioma */
         .language-switcher {
             display: flex;
             align-items: center;
@@ -191,7 +191,7 @@
             transform: rotate(-45deg) translate(7px, -6px);
         }
 
-        /* Navigation responsiveness */
+        /* Responsividade da navegação */
         @media (max-width: 768px) {
             .hamburger {
                 display: flex;
@@ -240,7 +240,7 @@
             }
         }
 
-        /* === GENERAL STYLE === */
+        /* === ESTILO GERAL === */
         * {
             margin: 0;
             padding: 0;
@@ -281,7 +281,7 @@
             padding: 30px 0 60px 0;
         }
 
-        /* === PAGE HEADER WITH PHOTO === */
+        /* === CABEÇALHO DA PÁGINA COM FOTO === */
         .header {
             text-align: center;
             margin-bottom: 50px;
@@ -375,7 +375,7 @@
             font-weight: 700;
         }
 
-        /* === SOCIAL MEDIA CARDS === */
+        /* === CARDS DE MÍDIAS SOCIAIS === */
         .sections-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
@@ -449,14 +449,14 @@
             display: inline-block;
         }
 
-        /* FIX: 2 column grid for better visualization */
+        /* CORREÇÃO: Grid de 2 colunas para melhor visualização */
         .social-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
 
-        /* FIX: Automatic height to show all content */
+        /* CORREÇÃO: Altura automática para mostrar todo o conteúdo */
         .social-card {
             background: rgba(240, 27, 133, 0.15);
             color: #ffffff;
@@ -491,7 +491,7 @@
             flex-shrink: 0;
         }
 
-        /* FIX: Flexible content that wraps */
+        /* CORREÇÃO: Conteúdo flexível que se ajusta */
         .social-content {
             flex: 1;
             min-width: 0;
@@ -518,7 +518,7 @@
             line-height: 1.4;
         }
 
-        /* === EMAIL SECTION === */
+        /* === SEÇÃO DE E-MAIL === */
         .email-section {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
@@ -596,7 +596,7 @@
             box-shadow: 0 5px 15px rgba(240, 27, 133, 0.4);
         }
 
-        /* === FLOATING BACK TO TOP BUTTON === */
+        /* === BOTÃO FLUTUANTE PARA VOLTAR AO TOPO === */
         .floating-top-btn {
             position: fixed;
             bottom: 30px;
@@ -628,7 +628,7 @@
             box-shadow: 0 8px 25px rgba(240, 27, 133, 0.6);
         }
 
-        /* === RESPONSIVENESS - FIXES === */
+        /* === RESPONSIVIDADE - CORREÇÕES === */
         @media (max-width: 992px) {
             .section-card {
                 padding: 25px;
@@ -684,7 +684,7 @@
         }
 
         @media (max-width: 650px) {
-            /* FIX: On smaller screens, 1 column for better reading */
+            /* CORREÇÃO: Em telas menores, 1 coluna para melhor leitura */
             .social-grid {
                 grid-template-columns: 1fr;
             }
@@ -758,29 +758,29 @@
     </style>
 </head>
 <body>
-    <!-- ===== NAVIGATION ===== -->
+    <!-- ===== NAVEGAÇÃO ===== -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-text">Profane Bonds</span>
+                <span class="logo-text">Laços Profanos</span>
             </a>
             
-            <!-- Language selection button -->
+            <!-- Seletor de idioma -->
             <div class="language-switcher">
                 <div class="language-dropdown" id="languageDropdown">
                     <button class="language-btn" id="languageBtn">
                         <i class="fas fa-globe"></i>
-                        <span id="current-language">English</span>
+                        <span id="current-language">Português</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-content" id="dropdownContent">
-                        <!-- "Portuguese" option leads to Portuguese version -->
-                        <a href="https://lacosprofanos.com.br/wahi" class="language-option" data-lang="pt">
-                            Português
+                        <!-- "Português" leva para versão em português -->
+                        <a href="https://lacosprofanos.com.br/wahi/" class="language-option" data-lang="pt" style="background-color: rgba(240, 27, 133, 0.3); color: #ff4da6;">
+                            <i class="fas fa-check"></i> Português
                         </a>
-                        <!-- "English" active option (not clickable) -->
-                        <a href="#" class="language-option" data-lang="en" style="background-color: rgba(240, 27, 133, 0.3); color: #ff4da6; pointer-events: none;">
-                            <i class="fas fa-check"></i> English
+                        <!-- "English" leva para versão em inglês -->
+                        <a href="https://lacosprofanos.com.br/wahi/en" class="language-option" data-lang="en">
+                            English
                         </a>
                     </div>
                 </div>
@@ -788,33 +788,33 @@
             
             <ul class="nav-menu" id="navMenu">
                 <li class="nav-item">
-                    <a href="https://lacosprofanos.com.br/en" target="_blank">
+                    <a href="https://lacosprofanos.com.br/" target="_blank">
                         <i class="fas fa-home"></i> 
-                        <span>Main Site</span>
+                        <span>Site Principal</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://lacosprofanos.com.br/wallpapers&icons/en" target="_blank">
+                    <a href="https://lacosprofanos.com.br/wallpapers&icons" target="_blank">
                         <i class="fas fa-image"></i> 
-                        <span>Wallpapers & Icons</span>
+                        <span>Wallpapers & Ícones</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <!-- Blog remains the same -->
+                    <!-- Blog permanece o mesmo -->
                     <a href="https://lacosprofanos.blogspot.com/" target="_blank">
                         <i class="fas fa-blog"></i> Blog
                     </a>
                 </li>
                 <li class="nav-item">
-                    <!-- English Wiki link -->
-                    <a href="https://profanebonds.fandom.com/wiki/" target="_blank" class="wiki-link">
+                    <!-- Link da Wiki em português -->
+                    <a href="https://lacosprofanos.fandom.com/pt-br/" target="_blank" class="wiki-link">
                         <i class="fas fa-book"></i> Wiki
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://bit.ly/lptos" target="_blank">
+                    <a href="https://bit.ly/lptos-br" target="_blank">
                         <i class="fas fa-file-contract"></i> 
-                        <span>Terms of Service</span>
+                        <span>Termos de Serviço</span>
                     </a>
                 </li>
             </ul>
@@ -827,38 +827,38 @@
         </div>
     </nav>
 
-    <!-- Floating back to top button -->
+    <!-- Botão flutuante para voltar ao topo -->
     <a href="#top" class="floating-top-btn" id="floatingTopBtn">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <main class="container">
-        <!-- Page header with photo -->
+        <!-- Cabeçalho da página com foto -->
         <header class="header" id="top">
             <div class="profile-section">
                 <div class="profile-image">
-                    <img src="https://i.imgur.com/LOXjaKn.jpeg" alt="Wahi - Creator of Profane Bonds">
+                    <img src="https://i.imgur.com/LOXjaKn.jpeg" alt="Wahi - Criadora de Laços Profanos">
                 </div>
                 
                 <div class="profile-info">
-                    <h1 class="page-title">Wahi's Social Media</h1>
+                    <h1 class="page-title">Redes Sociais da Wahi</h1>
                     
                     <p class="subtitle">
-                        Connect with the creator of the <span class="highlight">Profane Bonds</span> universe through her social media, 
-                        development platforms, and content channels.
+                        Conecte-se com a criadora do universo <span class="highlight">Laços Profanos</span> através de suas redes sociais,
+                        plataformas de desenvolvimento e canais de conteúdo.
                     </p>
                 </div>
             </div>
         </header>
 
-        <!-- Grid of sections -->
+        <!-- Grid de seções -->
         <div class="sections-grid">
-            <!-- Wahipogo (Social Media) -->
+            <!-- Wahipogo (Mídias Sociais) -->
             <div class="section-card">
                 <h2 class="section-title">Wahipogo</h2>
                 
                 <p class="subtitle" style="text-align: left; margin-bottom: 25px;">
-                    Personal social media and creative content channels
+                    Redes sociais pessoais e canais de conteúdo criativo
                 </p>
                 
                 <div class="social-grid">
@@ -868,7 +868,7 @@
                         </div>
                         <div class="social-content">
                             <h3>YouTube</h3>
-                            <p>Channel focused on animations</p>
+                            <p>Canal focado em animações</p>
                         </div>
                     </a>
                     
@@ -878,7 +878,7 @@
                         </div>
                         <div class="social-content">
                             <h3>Instagram</h3>
-                            <p>Personal profile with photos and updates</p>
+                            <p>Perfil pessoal com fotos e atualizações</p>
                         </div>
                     </a>
                     
@@ -888,7 +888,7 @@
                         </div>
                         <div class="social-content">
                             <h3>TikTok</h3>
-                            <p>Short videos and fun content</p>
+                            <p>Vídeos curtos e conteúdo divertido</p>
                         </div>
                     </a>
                     
@@ -898,7 +898,7 @@
                         </div>
                         <div class="social-content">
                             <h3>X (Twitter)</h3>
-                            <p>Updates and thoughts</p>
+                            <p>Atualizações e pensamentos</p>
                         </div>
                     </a>
                     
@@ -908,18 +908,18 @@
                         </div>
                         <div class="social-content">
                             <h3>Discord</h3>
-                            <p>Official Profane Bonds server</p>
+                            <p>Servidor oficial de Laços Profanos</p>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <!-- Developer Networks -->
+            <!-- Redes de Desenvolvedor -->
             <div class="section-card">
-                <h2 class="section-title">Developer Networks</h2>
+                <h2 class="section-title">Redes de Desenvolvedor</h2>
                 
                 <p class="subtitle" style="text-align: left; margin-bottom: 25px;">
-                    Development platforms, portfolio, and technical projects
+                    Plataformas de desenvolvimento, portfólio e projetos técnicos
                 </p>
                 
                 <div class="social-grid">
@@ -929,7 +929,7 @@
                         </div>
                         <div class="social-content">
                             <h3>GitHub</h3>
-                            <p>Personal account with code projects</p>
+                            <p>Conta pessoal com projetos de código</p>
                         </div>
                     </a>
                     
@@ -939,7 +939,7 @@
                         </div>
                         <div class="social-content">
                             <h3>GitHub Portfolio</h3>
-                            <p>Portfolio project repository</p>
+                            <p>Repositório do projeto de portfólio</p>
                         </div>
                     </a>
                     
@@ -948,18 +948,18 @@
                             <i class="fas fa-briefcase"></i>
                         </div>
                         <div class="social-content">
-                            <h3>Online Portfolio</h3>
-                            <p>Complete portfolio with all projects</p>
+                            <h3>Portfólio Online</h3>
+                            <p>Portfólio completo com todos os projetos</p>
                         </div>
                     </a>
                     
-                    <a href="https://www.youtube.com/@wahipogo2en" target="_blank" class="social-card">
+                    <a href="https://www.youtube.com/@wahipogo2" target="_blank" class="social-card">
                         <div class="social-icon" style="color: #FF0000;">
                             <i class="fab fa-youtube"></i>
                         </div>
                         <div class="social-content">
                             <h3>YouTube Dev</h3>
-                            <p>Development channel</p>
+                            <p>Canal de desenvolvimento</p>
                         </div>
                     </a>
                     
@@ -969,22 +969,22 @@
                         </div>
                         <div class="social-content">
                             <h3>itch.io</h3>
-                            <p>Profile with indie games and game dev projects</p>
+                            <p>Perfil com jogos indie e projetos de game dev</p>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Email Section -->
+        <!-- Seção de E-mail -->
         <div class="email-section">
             <h2 class="email-title">
-                <i class="fas fa-envelope"></i> Commercial Contact
+                <i class="fas fa-envelope"></i> Contato Comercial
             </h2>
             
             <div class="email-box">
                 <p style="color: #cccccc; margin-bottom: 10px;">
-                    For commercial proposals, partnerships, or professional inquiries:
+                    Para propostas comerciais, parcerias ou contatos profissionais:
                 </p>
                 
                 <div class="email-address">
@@ -993,28 +993,28 @@
                 
                 <button class="copy-btn" id="copyEmailBtn">
                     <i class="far fa-copy"></i> 
-                    <span>Copy Email</span>
+                    <span>Copiar E-mail</span>
                 </button>
                 
                 <p class="email-note">
-                    <i class="fas fa-info-circle"></i> This email is intended only for commercial and professional contact. 
-                    For other matters, use the social media above.
+                    <i class="fas fa-info-circle"></i> Este e-mail é destinado apenas para contato comercial e profissional.
+                    Para outros assuntos, utilize as redes sociais acima.
                 </p>
             </div>
         </div>
     </main>
 
-    <!-- Navigation and Scripts -->
+    <!-- Navegação e Scripts -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            console.log("Wahi's page loaded - system ready");
+            console.log("Página da Wahi carregada - sistema pronto");
             
-            // ===== 1. LANGUAGE DROPDOWN CONTROL =====
+            // ===== 1. CONTROLE DO DROPDOWN DE IDIOMA =====
             const languageBtn = document.getElementById('languageBtn');
             const dropdownContent = document.getElementById('dropdownContent');
             
             if (languageBtn && dropdownContent) {
-                // Open/close dropdown when clicking the button
+                // Abrir/fechar dropdown ao clicar no botão
                 languageBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
                     if (dropdownContent.style.display === 'block') {
@@ -1024,37 +1024,37 @@
                     }
                 });
                 
-                // Close dropdown when clicking outside
+                // Fechar dropdown ao clicar fora
                 document.addEventListener('click', function(e) {
                     if (!e.target.closest('.language-dropdown')) {
                         dropdownContent.style.display = 'none';
                     }
                 });
                 
-                // Prevent dropdown from closing when clicking inside it
+                // Evitar que dropdown feche ao clicar dentro dele
                 dropdownContent.addEventListener('click', function(e) {
                     e.stopPropagation();
                 });
             }
             
-            // ===== 2. HAMBURGER MENU =====
+            // ===== 2. MENU HAMBURGUER =====
             const hamburger = document.getElementById('hamburger');
             const navMenu = document.getElementById('navMenu');
             
             if (hamburger && navMenu) {
-                console.log('Hamburger menu found');
+                console.log('Menu hamburguer encontrado');
                 
                 hamburger.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    console.log('Hamburger clicked');
+                    console.log('Hamburguer clicado');
                     
                     hamburger.classList.toggle('active');
                     navMenu.classList.toggle('active');
                     
-                    console.log('Menu active?', navMenu.classList.contains('active'));
+                    console.log('Menu ativo?', navMenu.classList.contains('active'));
                 });
                 
-                // Close menu when clicking links (mobile)
+                // Fechar menu ao clicar nos links (mobile)
                 document.querySelectorAll('.nav-item a').forEach(link => {
                     link.addEventListener('click', function(e) {
                         if (window.innerWidth <= 768) {
@@ -1064,7 +1064,7 @@
                     });
                 });
                 
-                // Close menu when clicking outside (mobile)
+                // Fechar menu ao clicar fora (mobile)
                 document.addEventListener('click', function(event) {
                     if (window.innerWidth <= 768 && 
                         navMenu.classList.contains('active') && 
@@ -1076,7 +1076,7 @@
                 });
             }
             
-            // Close menu when resizing screen
+            // Fechar menu ao redimensionar a tela
             window.addEventListener('resize', function() {
                 if (window.innerWidth > 768 && navMenu) {
                     hamburger.classList.remove('active');
@@ -1084,17 +1084,17 @@
                 }
             });
             
-            // ===== 3. COPY EMAIL BUTTON =====
+            // ===== 3. BOTÃO COPIAR E-MAIL =====
             const copyEmailBtn = document.getElementById('copyEmailBtn');
             if (copyEmailBtn) {
                 copyEmailBtn.addEventListener('click', function() {
                     const email = 'wahipoga@gmail.com';
                     
-                    // Use Clipboard API
+                    // Usar Clipboard API
                     navigator.clipboard.writeText(email).then(function() {
-                        // Visual feedback
+                        // Feedback visual
                         const originalText = copyEmailBtn.innerHTML;
-                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span>Copied!</span>';
+                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span>Copiado!</span>';
                         copyEmailBtn.style.background = '#4CAF50';
                         
                         setTimeout(function() {
@@ -1102,8 +1102,8 @@
                             copyEmailBtn.style.background = '#f01b85';
                         }, 2000);
                     }).catch(function(err) {
-                        console.error('Error copying: ', err);
-                        // Fallback to old method
+                        console.error('Erro ao copiar: ', err);
+                        // Fallback para método antigo
                         const textArea = document.createElement('textarea');
                         textArea.value = email;
                         document.body.appendChild(textArea);
@@ -1111,9 +1111,9 @@
                         document.execCommand('copy');
                         document.body.removeChild(textArea);
                         
-                        // Visual feedback even with fallback
+                        // Feedback visual mesmo com fallback
                         const originalText = copyEmailBtn.innerHTML;
-                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span>Copied!</span>';
+                        copyEmailBtn.innerHTML = '<i class="fas fa-check"></i> <span>Copiado!</span>';
                         copyEmailBtn.style.background = '#4CAF50';
                         
                         setTimeout(function() {
@@ -1124,7 +1124,7 @@
                 });
             }
             
-            // ===== 4. FLOATING BACK TO TOP BUTTON =====
+            // ===== 4. BOTÃO FLUTUANTE PARA VOLTAR AO TOPO =====
             const floatingTopBtn = document.getElementById('floatingTopBtn');
             if (floatingTopBtn) {
                 window.addEventListener('scroll', function() {
@@ -1136,7 +1136,7 @@
                 });
             }
             
-            // ===== 5. SMOOTH SCROLL TO ANCHORS =====
+            // ===== 5. ROLAGEM SUAVE PARA ÂNCORAS =====
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -1154,14 +1154,14 @@
                 });
             });
             
-            // ===== 6. PREVENT LINKS WITH # =====
+            // ===== 6. PREVENIR LINKS COM # =====
             document.querySelectorAll('a[href="#"]').forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                 });
             });
             
-            console.log('System fully initialized');
+            console.log('Sistema totalmente inicializado');
         });
     </script>
 </body>
