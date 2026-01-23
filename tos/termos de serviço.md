@@ -3,9 +3,9 @@
 - Estes termos podem ser **atualizados a qualquer momento** por Laços Profanos. É de **responsabilidade do usuário** manter-se informado sobre a versão mais recente e cumprir os termos vigentes.  
 - **Última atualização:** 22/01/2026  
 - Em caso de divergências ou erros em traduções para outros idiomas, **a versão em português prevalecerá**.
-- 
+
 **Aceitação dos Termos:**
-Ao usar qualquer conteúdo da marca Laços Profanos — incluindo artes, personagens, fanarts ou textos — você concorda automaticamente com estes Termos de Serviço.
+- Ao usar qualquer conteúdo da marca Laços Profanos — incluindo artes, personagens, fanarts ou textos — você concorda automaticamente com estes Termos de Serviço.
 ---
 ## 1. Direitos sobre Conteúdos do Site
 1. Os wallpapers, ícones e demais conteúdos visuais disponíveis no site **não podem ser revendidos ou usados para fins comerciais** sem autorização.  
